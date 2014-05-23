@@ -1,7 +1,6 @@
 #------------------------Project on Getting and Cleaning Data------------------------------------#
 
 #STEP 1 Ensure that you have downloaded the Samsung Dataset and it is located at your working directory.------
-setwd("/Users/apo/Desktop/Coursera/R/CleaningData")
 
 
 #STEP 2 Reading the relevant files----------------------------------------------------------------------------
@@ -25,6 +24,7 @@ test <- read.table(file2)
 #get subject id for train and test table
 subject_train <- read.table(file3)
 subject_test <- read.table(file4)
+
 
 #get variable names 
 var_names <- read.table(file_features)
@@ -96,5 +96,4 @@ colnames(bodyAverages) <- names
 
 #STEP 9 : Creating the table in a .csv form -----------------------------------------------------------
 write.csv(bodyAverages, file = "bodyAverages.csv")
-
 
