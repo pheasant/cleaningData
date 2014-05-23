@@ -95,5 +95,6 @@ colnames(bodyAverages) <- names
     
 
 #STEP 9 : Creating the table in a .csv form -----------------------------------------------------------
-write.csv(bodyAverages, file = "bodyAverages.csv")
+
+write.table(bodyAverages, "bodyAverage.txt", sep="\t")
 
